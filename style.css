@@ -259,13 +259,155 @@ header {
 .currency-table--date p {
     font-family: 'Inter', sans-serif;
     font-style: normal;
-    font-weight: 700;
+    font-weight: 300;
     font-size: 1.2rem;
     line-height: 1.5rem;
     color: var(--warm-black);
     text-align: center;
-
 }
+
+.main-product-detail {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--black);
+}
+
+.icon-section {
+    position: absolute;
+    top: -15px;
+    width: 52px;
+    height: 32px;
+    background-image: url("./assets/icons/batata.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.product-detail--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+}
+
+.product-detail--title h2 {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4rem;
+    line-height: 2.6rem;
+    text-align: center;
+    color: var(--just-white);
+    margin-top: 30px;
+}
+
+.product-detail--title p {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    text-align: center;
+    color: var(--grey);
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.product-cards--container {
+    width: 100%;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-detail-card {
+    width: 90%;
+    height: 152px;
+    background-color: var(--warm-black);
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+    
+    
+}
+
+.product-detail-card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/clock.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.product-detail-card .ojo {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/eye.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.product-detail-card .pesos {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/dollar-sign.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.product-detail-card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/check-circle.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.product-detail-card .product--card-title {
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    color: var(--just-white);
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.product-detail-card .product--card-paragraf{
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #808080;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
 
 
 
