@@ -96,7 +96,7 @@ header {
     width: 13px;
     height: 8px;
     margin-left: 10px;
-    background-image: url("./assets/icons/down-arrow.svg");
+    background-image: url("../assets/icons/down-arrow.svg");
 }
 
 .main {
@@ -121,7 +121,7 @@ header {
     height: 193px;
     margin-top: 50px;
     margin-bottom: 50px;
-    background-image: url("./assets/img/Bitcoin.svg");
+    background-image: url("../assets/img/Bitcoin.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -226,7 +226,7 @@ header {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url("./assets/icons/trending-down.svg");
+    background-image: url("../assets/icons/trending-down.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -237,7 +237,7 @@ header {
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-image: url("./assets/icons/trending-up.svg");
+    background-image: url("../assets/icons/trending-up.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -283,7 +283,7 @@ header {
     top: -15px;
     width: 52px;
     height: 32px;
-    background-image: url("./assets/icons/batata.svg");
+    background-image: url("../assets/icons/batata.svg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,6 +328,7 @@ header {
 
 .product-detail-card {
     width: 90%;
+    max-width: 400px; 
     height: 152px;
     background-color: var(--warm-black);
     border-radius: 4px;
@@ -341,7 +342,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./assets/icons/clock.svg);
+    background-image: url("../assets/icons/clock.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -353,7 +354,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./assets/icons/eye.svg);
+    background-image: url("../assets/icons/eye.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -365,7 +366,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./assets/icons/dollar-sign.svg);
+    background-image: url("../assets/icons/dollar-sign.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -377,7 +378,7 @@ header {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background-image: url(./assets/icons/check-circle.svg);
+    background-image: url("../assets/icons/check-circle.svg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -412,7 +413,7 @@ header {
    width: 100%;
    min-width: 320px;
    height: 387px;
-   background-image: url(./assets/img/bitcoinbaby2x.jpg);
+   background-image: url("../assets/img/bitcoinbaby2x.jpg");
    background-position: center;
    background-size: cover;
    background-repeat: no-repeat;
@@ -464,6 +465,9 @@ header {
     justify-content: center;
     width: 100%;
     min-width: 320px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
     
 }
 
@@ -471,6 +475,7 @@ header {
     display: flex;
     justify-content: center;
     position: relative;
+    scroll-snap-align: center ;
     width: 70%;
     min-width: 230px;
     max-width: 300px;
@@ -489,11 +494,141 @@ header {
     align-items: center;
     justify-content: center;
     width: 120px;
-    height: 31px;
+    height: 35px;
     background-color: var(--bitcoin-orange);
     border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--just-white);
+}
+
+.pago-planes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h3-pago {
+    padding-top: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--black);
+}
+
+.paragraf-precio {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.2rem;
+    line-height: 6.3rem;
+    color: black;
+    padding: 5px 0;
 
 }
+
+.paragraf-precio span {
+    display: inline-block;
+    width: 8px;
+    height: 15px;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #363636;
+    position: absolute;
+    left: 70px;
+    
+}
+
+.parrafo-ahorro {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: #757575;
+
+}
+
+.button-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 48px;
+    background-color: #FaF8F7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    margin-top: 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+    color: #201E1C;
+}
+
+.button-card span {
+    background-image: url("../assets/icons/orange-right-arrow.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 30px;
+    height: 25px;
+    margin-left: 10px;
+
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+.redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+    width: 50%;
+    
+}
+
+.redes a {
+    text-decoration: none;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    color: var(--just-white);
+    margin: 10px 0;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    
+}
+.copyright span {
+    width: 80px;
+    height: 65px;
+    background-image: url("../assets/img/logo-footer.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 
 
 
